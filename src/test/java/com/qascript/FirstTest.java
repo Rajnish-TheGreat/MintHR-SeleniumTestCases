@@ -15,17 +15,17 @@ public class FirstTest {
        WebDriver driver = null;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized"); // open Browser in maximized mode
-        options.addArguments("disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
+//         options.addArguments("start-maximized"); // open Browser in maximized mode
+//         options.addArguments("disable-infobars"); // disabling infobars
+//         options.addArguments("--disable-extensions"); // disabling extensions
+//         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox"); // Bypass OS security mode
 
 //         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
         options.addArguments("headless");
-        options.addArguments("disable-gpu");
+      
         driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
         System.out.println("Title of the page is: " + driver.getTitle());
