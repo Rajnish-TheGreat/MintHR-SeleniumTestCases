@@ -3,7 +3,7 @@ package com.qascript;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import io.github.bonigarcia.WebDriverManager
+import io.github.bonigarcia.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
