@@ -15,7 +15,6 @@ public class FirstTest {
        WebDriver driver = null;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
