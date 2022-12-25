@@ -13,8 +13,8 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
         WebDriver driver = null;
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
+//         WebDriverManager.chromedriver().setup();
+   
 //         options.addArguments("start-maximized"); 
 //         options.addArguments("enable-automation"); 
 //         options.addArguments("--no-sandbox"); 
@@ -22,8 +22,8 @@ public class FirstTest {
 //         options.addArguments("--disable-dev-shm-usage");
 //         options.addArguments("--disable-browser-side-navigation"); 
 //         options.addArguments("--disable-gpu"); 
-// //         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//         ChromeOptions options = new ChromeOptions();
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
