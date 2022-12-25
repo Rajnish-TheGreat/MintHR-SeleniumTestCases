@@ -15,25 +15,16 @@ public class FirstTest {
        WebDriver driver = null;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized"); 
-        options.addArguments("enable-automation"); 
-        options.addArguments("--no-sandbox"); 
-        options.addArguments("--disable-infobars");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-browser-side-navigation"); 
-        options.addArguments("--disable-gpu"); 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security mode
+
 //         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//         options.addArguments("start-maximized"); 
-//         options.addArguments("enable-automation"); 
-//         options.addArguments("--no-sandbox"); 
-//         options.addArguments("--disable-infobars");
-//         options.addArguments("--disable-dev-shm-usage");
-//         options.addArguments("--disable-browser-side-navigation"); 
-//         options.addArguments("--disable-gpu"); 
-// //         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//         ChromeOptions options = new ChromeOptions();
-//         options.addArguments("headless");
-//         options.addArguments("disable-gpu");
+
         options.addArguments("headless");
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
