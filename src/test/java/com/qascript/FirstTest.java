@@ -13,7 +13,7 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
        WebDriver driver = null;
-        WebDriverManager.chromedriver().setup();
+      //  WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
 //         options.addArguments("start-maximized"); // open Browser in maximized mode
 //         options.addArguments("disable-infobars"); // disabling infobars
@@ -23,7 +23,7 @@ public class FirstTest {
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox"); // Bypass OS security mode
         
-//         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
         driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
