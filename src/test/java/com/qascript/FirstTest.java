@@ -13,7 +13,7 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
         WebDriver driver = null;
-        WebDriverManager.chromedriver().browserVersion("109.0.5414.25").setup();
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized"); 
         options.addArguments("enable-automation"); 
