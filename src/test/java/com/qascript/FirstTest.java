@@ -13,7 +13,7 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
        WebDriver driver = null;
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().browserVersion(" 109.0.5414.25").setup();
         ChromeOptions options = new ChromeOptions();
 //         options.addArguments("start-maximized"); // open Browser in maximized mode
 //         options.addArguments("disable-infobars"); // disabling infobars
