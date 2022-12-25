@@ -26,7 +26,7 @@ public class FirstTest {
          System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
         driver = new ChromeDriver(options);
-        driver.get("https://www.google.com");
+        driver.get("https://staging.dx0oqxblmo7a7.amplifyapp.com/login");
         System.out.println("Title of the page is: " + driver.getTitle());
  
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
