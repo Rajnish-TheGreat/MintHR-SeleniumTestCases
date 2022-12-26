@@ -29,7 +29,7 @@ public class FirstTest {
         driver.get("https://staging.dx0oqxblmo7a7.amplifyapp.com/login");
         System.out.println("Title of the page is: " + driver.getTitle());
  
-        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Mint HR"));
+        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Mi HR"));
         driver.close();
     }
 
