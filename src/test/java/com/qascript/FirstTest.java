@@ -12,7 +12,7 @@ public class FirstTest {
 
     @Test
     public void OpenBrowser()  {
-       WebDriver driver = null;
+        WebDriver driver = null;
       //  WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
 //         options.addArguments("start-maximized"); // open Browser in maximized mode
